@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone } from 'lucide-react';
+import WhatsAppIcon from './components/whatsappIcon';
 
 function App() {
   return (
@@ -96,26 +97,18 @@ function App() {
           <img src="/isotipo.png" alt="SOLBA Isotipo" className="w-12 h-12 sm:w-16 sm:h-16" />
         </div>
         <div className="container mx-auto px-4">
-          <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
-            <a
-              href="https://wa.me/3388502347"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center text-[#3a36c9] hover:text-[#fe5200] transition-colors"
-            >
-              <Phone className="w-5 h-5 sm:w-6 sm:h-6 mr-2" />
-              <span className="text-sm sm:text-base">WhatsApp</span>
-            </a>
+          <div className="flex justify-center items-center">
             <a
               href="mailto:admin@gruposolba.com.ar"
               className="flex items-center text-[#3a36c9] hover:text-[#fe5200] transition-colors"
             >
               <Mail className="w-5 h-5 sm:w-6 sm:h-6 mr-2" />
-              <span className="text-sm sm:text-base">admin@gruposolba.com.ar</span>
+              <span className="text-sm sm:text-base">admin@gruposolba.com</span>
             </a>
           </div>
         </div>
       </section>
+      <WhatsAppIcon />
     </div>
   );
 }
